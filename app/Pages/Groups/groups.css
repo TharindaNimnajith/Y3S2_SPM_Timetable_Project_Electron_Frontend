@@ -1,0 +1,23 @@
+.groupsTopWrapper p {
+  font-size: 1.2em !important;
+  font-family: "Roboto", serif;
+  font-weight: bold;
+}
+
+.groupsTopWrapper h3 {
+  font-size: 1.2em !important;
+  font-family: "Roboto", serif;
+  font-weight: bold;
+}
+
+.groupsViewTable td {
+  padding-left: 50px;
+}
+
+.groupsError {
+  position: relative;
+  letter-spacing: 1px;
+  font-size: 1.5em;
+  text-align: center;
+  font-weight: 900;
+}

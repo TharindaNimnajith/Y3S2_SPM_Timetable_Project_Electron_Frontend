@@ -1,0 +1,26 @@
+.parallelSessionsTopWrapper p {
+  font-size: 1.2em !important;
+  font-family: "Roboto", serif;
+  font-weight: bold;
+}
+
+.parallelSessionsTopWrapper h3 {
+  font-size: 1.2em !important;
+  font-family: "Roboto", serif;
+  font-weight: bold;
+}
+
+.parallelSessionsViewTable td {
+  padding-left: 50px;
+}
+
+.parallelSessionsError {
+  position: relative;
+  letter-spacing: 1px;
+  font-size: 1.5em;
+  text-align: center;
+  font-weight: 900;
+}
+
+
+

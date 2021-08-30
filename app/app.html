@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+  <meta charset='utf-8'/>
+  <link crossorigin='anonymous'
+        href='https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css'
+        integrity='sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm'
+        rel='stylesheet'/>
+  <script crossorigin='anonymous'
+          integrity='sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN'
+          src='https://code.jquery.com/jquery-3.2.1.slim.min.js'></script>
+  <script crossorigin='anonymous'
+          integrity='sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q'
+          src='https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js'></script>
+  <script crossorigin='anonymous'
+          integrity='sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl'
+          src='https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js'></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.28.0/moment.min.js"></script>
+  <title>Time Table Generator</title>
+  <script>
+    (() => {
+      if (
+        typeof process !== 'object' ||
+        (typeof process === 'object' && !process.env.START_HOT)
+      ) {
+        const link = document.createElement('link')
+        link.rel = 'stylesheet'
+        link.href = './dist/style.css'
+        document.getElementsByTagName('head')[0].appendChild(link)
+      }
+    })()
+  </script>
+</head>
+<body>
+<div id='root'></div>
+<script>
+  if (typeof process === 'object') {
+    const scripts = []
+    if (process.env.NODE_ENV === 'development') {
+      scripts.push('../dll/renderer.dev.dll.js')
+    }
+    if (process.env.START_HOT) {
+      const port = process.env.PORT || 1212
+      scripts.push(`http://localhost:${port}/dist/renderer.dev.js`)
+    } else {
+      scripts.push('./dist/renderer.prod.js')
+    }
+    if (scripts.length) {
+      document.write(
+        scripts
+          .map((script) => `<script defer src='${script}'><\/script>`)
+          .join('')
+      )
+    }
+  }
+</script>
+</body>
+</html>

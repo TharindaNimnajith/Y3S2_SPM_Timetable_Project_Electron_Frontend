@@ -1,0 +1,23 @@
+.consecutiveSessionsTopWrapper p {
+  font-size: 1.2em !important;
+  font-family: "Roboto", serif;
+  font-weight: bold;
+}
+
+.consecutiveSessionsTopWrapper h3 {
+  font-size: 1.2em !important;
+  font-family: "Roboto", serif;
+  font-weight: bold;
+}
+
+.consecutiveSessionsViewTable td {
+  padding-left: 50px;
+}
+
+.consecutiveSessionsError {
+  position: relative;
+  letter-spacing: 1px;
+  font-size: 1.5em;
+  text-align: center;
+  font-weight: 900;
+}

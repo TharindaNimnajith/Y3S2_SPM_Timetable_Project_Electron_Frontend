@@ -1,0 +1,24 @@
+.lecturersTopWrapper p {
+  font-size: 1.2em !important;
+  font-family: "Roboto", serif;
+  font-weight: bold;
+}
+
+.lecturersTopWrapper h3 {
+  font-size: 1.2em !important;
+  font-family: "Roboto", serif;
+  font-weight: bold;
+}
+
+.lecturersViewTable td {
+  padding-left: 0px;
+  padding-right: 0px;
+}
+
+.lecturersError {
+  position: relative;
+  letter-spacing: 1px;
+  font-size: 1.5em;
+  text-align: center;
+  font-weight: 900;
+}

@@ -1,0 +1,35 @@
+@import '~@fortawesome/fontawesome-free/css/all.css';
+
+body {
+  position: relative;
+  height: 100vh;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans",
+  sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  overflow-y: scroll;
+  overflow-x: scroll;
+}
+
+a:hover {
+  opacity: 1;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+h1 {
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+
+h5 {
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+label {
+  font-size: large;
+}
+
+button:focus {
+  outline: none;
+}

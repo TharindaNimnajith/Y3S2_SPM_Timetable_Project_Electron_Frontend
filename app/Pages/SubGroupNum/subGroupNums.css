@@ -1,0 +1,23 @@
+.subGroupNumsTopWrapper p {
+  font-size: 1.2em !important;
+  font-family: "Roboto", serif;
+  font-weight: bold;
+}
+
+.subGroupNumsTopWrapper h3 {
+  font-size: 1.2em !important;
+  font-family: "Roboto", serif;
+  font-weight: bold;
+}
+
+.subGroupNumsViewTable td {
+  padding-left: 50px;
+}
+
+.subGroupNumsError {
+  position: relative;
+  letter-spacing: 1px;
+  font-size: 1.5em;
+  text-align: center;
+  font-weight: 900;
+}
